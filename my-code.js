@@ -39,22 +39,6 @@ If they enter anything else, show the usual mesage like before.
 
 */
 
-let weapon = prompt("What weapon do you need?")
-
-
-function prepareWeapons(weapon) {
-    if(weapon === "Hammer") {
-        console.log("Battle hammer Requested");
-        console.log("Factory Notified");
-        console.log("Your item will arrive in 3-5 business days.")
-    } else 
-    console.log("Looks like you need your " + weapon + ".  I'll get it ready for you.");
-}
-
-prepareWeapons(weapon);
-
-
-
 /*
 
 Moving hammer code into its own function
@@ -71,3 +55,19 @@ if the user asks for a hammer they should see those three lines
 
 if they ask for anything else they should see the usual message. 
 */
+
+let weapon = prompt("What weapon do you need?")
+
+
+function prepareHammer(weapon) {
+    if(weapon === "Hammer") {
+        console.log("Battle hammer Requested");
+        console.log("Factory Notified");
+        console.log("Your item will arrive in 3-5 business days.")
+    } else 
+    console.log("Looks like you need your " + weapon + ".  I'll get it ready for you.");
+}
+
+prepareHammer(weapon);
+
+
