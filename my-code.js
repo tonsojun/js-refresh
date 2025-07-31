@@ -25,14 +25,6 @@ now add a prompt() to ask the use what they need.
 then call the function using what they typed in as the argument. 
 
 */
-let weapon = prompt("What weapon do you need?")
-
-function prepareWeapons(weapon) {
-    console.log("Looks like you need your " + weapon + ".  I'll get it ready for you.");
-}
-
-prepareWeapons(weapon);
-
 
 /*
 
@@ -46,6 +38,22 @@ if the usre enters hammer, display the following lines:
 If they enter anything else, show the usual mesage like before. 
 
 */
+
+let weapon = prompt("What weapon do you need?")
+
+
+function prepareWeapons(weapon) {
+    if(weapon === "Hammer") {
+        console.log("Battle hammer Requested");
+        console.log("Factory Notified");
+        console.log("Your item will arrive in 3-5 business days.")
+    } else 
+    console.log("Looks like you need your " + weapon + ".  I'll get it ready for you.");
+}
+
+prepareWeapons(weapon);
+
+
 
 /*
 
