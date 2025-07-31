@@ -1,3 +1,5 @@
-console.log("This code is inside the file");
-console.log("I'm programming right now")
-alert("Yay!")
+let message = "What's your weapon?";
+
+let weapon_request = prompt(message);
+
+console.log(weapon_request);
