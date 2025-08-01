@@ -19,7 +19,7 @@ function buttonClicked() {
 function buildHouses () {
     let houses = prompt("How many houses do you want?");
     for (let i = 0; i < houses; i++) {
-        console.log("House built!");
+        console.log("House " + i + " built!");
     }
 }
 
