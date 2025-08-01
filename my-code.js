@@ -17,7 +17,8 @@ function buttonClicked() {
 }
 
 function buildHouses () {
-    for (let i = 0; i < 6; i++) {
+    let houses = prompt("How many houses do you want?");
+    for (let i = 0; i < houses; i++) {
         console.log("House built!");
     }
 }
