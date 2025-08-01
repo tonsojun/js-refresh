@@ -18,9 +18,26 @@ function buttonClicked() {
 
 function buildHouses () {
     let houses = prompt("How many houses do you want?");
+
     for (let i = 0; i < houses; i++) {
-        console.log("House " + i + " built!");
+        if (i < 5) {
+            console.log("Big house " + i + " built!");
+        } else {
+            console.log("Small house " + i + " built!");
+        }
+
     }
 }
 
 buildHouses()
+
+function buildStables () {
+    let stables = prompt("How many stables do you want?");
+    let stablesNumber = Number(stables);
+    
+    for (let i = 0; i < stablesNumber; i++) {
+        console.log("Stable built!");
+    }
+}
+
+buildStables()
